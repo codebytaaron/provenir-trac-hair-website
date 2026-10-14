@@ -5,7 +5,7 @@ directly to [Provenir](https://provenirhair.com/) with a verified donor,
 recorded consent and a traceable record from cut to payout.
 
 Plain HTML, CSS and JavaScript: no build step. Open `index.html` in a
-browser, or serve the folder with any static host (GitHub Pages is set up).
+browser, or serve the folder with any static host (deployed on Vercel).
 
 - `index.html`: page content, SEO meta tags and structured data
 - `styles.css`: design, using the app's palette

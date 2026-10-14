@@ -90,4 +90,16 @@ if (pony) {
   }
 }
 
+// Phone menu.
+const menuButton = document.querySelector('.menu-btn');
+const menu = document.getElementById('mobile-menu');
+const setMenu = (open) => {
+  menuButton.setAttribute('aria-expanded', String(open));
+  menuButton.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+  menu.hidden = !open;
+};
+menuButton.addEventListener('click', () => setMenu(menu.hidden));
+menu.addEventListener('click', (event) => { if (event.target.closest('a')) setMenu(false); });
+window.addEventListener('keydown', (event) => { if (event.key === 'Escape') setMenu(false); });
+
 document.getElementById('year').textContent = new Date().getFullYear();

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://codebytaaron.github.io/provenir-trac-hair-website/sitemap.xml
